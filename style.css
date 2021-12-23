@@ -1,11 +1,10 @@
-/* ROBOT.GIF from Giphy - https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Montserrat:wght@400;600&display=swap');
 html {
   box-sizing: border-box;
 }
 body {
   margin: 0;
-  background: #45badd;
+  background: white; 
   }
 
 .container {
@@ -15,10 +14,33 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('./robot.gif');
+  background: url('./robot2.gif');
   background-size: contain;
-  background-position: left center;
+  background-position: center center;
   background-repeat: no-repeat;
+}
+.header-text{
+  text-align:center;
+  color:#333;
+  line-height:1;
+}
+.header-text h1{
+  font-family:'Montserrat Alternates', sans-serif;
+  font-size:5rem;
+  text-shadow:0 0.2rem 0.5rem rgba(0,0,0,0.4);
+}
+p{
+  font-family:'Montserrat',sans-serif;
+  font-size:2.3rem;
+  font-weight:600;
+  text-shadow:0 0.2rem 0.5rem rgba(0,0,0,0.4);
+}
+.flex-container{
+  height:70vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 button {
@@ -51,6 +73,19 @@ button:disabled {
     background-position: center center;
     background-size:cover;
   }  
+
+  .header-text h1{
+    font-family:'Montserrat Alternates', sans-serif;
+    font-size:2.5rem;
+    text-shadow:0 0.2rem 0.5rem rgba(0,0,0,0.4);
+  }
+  p{
+    font-family:'Montserrat',sans-serif;
+    font-size: 1.25rem;
+    font-weight:600;
+    text-shadow:0 0.2rem 0.5rem rgba(0,0,0,0.4);
+  }
+
 button {
   box-shadow: 5px 5px 30px 20px rgba(0,0,0,0.5);
   }
