@@ -1,9 +1,13 @@
 const button = document.getElementById('button');
 const audioElement = document.getElementById('audio');
+const bubbleElement = document.getElementById('bubble')
+
 
 //disable/enable button
 function toggleButton() {
     button.disabled = !button.disabled;
+    bubbleElement.hidden = !bubbleElement.hidden;
+
 }
 
 //passing joke to voiceRSS api
@@ -34,6 +38,7 @@ async function getJokes() {
         }else{
             joke = data.joke;
         }
+        bubbleElement.textContent = joke.replace("...",'\n');
         //text-to speech
         tellMe(joke);
         //disable button
